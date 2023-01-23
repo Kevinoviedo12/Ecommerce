@@ -1,8 +1,10 @@
-import React from "react";
 
-export const ItemListContainer = () => {
+
+ const ItemListContainer = ({saludo}) => {
     return(
-
+        <h2 style={{textAlign: 'center'}}>
+            {saludo}
+        </h2>
     );
 }
 
