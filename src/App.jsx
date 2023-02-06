@@ -3,8 +3,8 @@ import { useState } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import NavBar from './components/BarraNavegacion/NavBar';
-import ItemListContainer from './components/BarraNavegacion/ItemListContainer/ItemListContainer';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/NavBar/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartContainer from './components/CartContainer/CartContainer';
