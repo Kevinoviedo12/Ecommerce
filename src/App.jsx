@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import BarraNavegacion from './components/BarraNavegacion/BarraNavegacion';
+import NavBar from './components/BarraNavegacion/NavBar';
 import ItemListContainer from './components/BarraNavegacion/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <BarraNavegacion/>
+      <NavBar/>
         <Routes>
           <Route path='/' element={ <ItemListContainer saludo='soy item list container'/>}/>
           <Route path='/categoria/:idCategoria' element={ <ItemListContainer saludo='soy item list container'/>}/>

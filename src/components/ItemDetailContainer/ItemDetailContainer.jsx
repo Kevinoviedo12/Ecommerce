@@ -11,11 +11,13 @@ const ItemDetailContainer = () => {
   const [producto, setProducto] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  console.log(idProducto);
   useEffect (() => {
     if (idProducto) {
       gFetch()
+      
       .then(res => {
-        setProducto(res.filter(p => p.id === idProducto))
+        setProducto(res.find(p => p.id === idProducto))
         setLoading(false);
       }) 
       .catch(err => console.log(err));
