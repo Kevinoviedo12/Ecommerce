@@ -2,16 +2,18 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount';
+import ItemDetail from '../ItemDetail/ItemDetail';
 import { gFetch } from '../utils/gFetch';
 
 
 const ItemDetailContainer = () => {
 
   const { idProducto}= useParams();
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState({});
   const [loading, setLoading] = useState(true);
 
-  console.log(idProducto);
+  
+ 
   useEffect (() => {
     if (idProducto) {
       gFetch()
@@ -40,12 +42,12 @@ const ItemDetailContainer = () => {
       </div>
       );
   }
-  // return (
-  //   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  //     <ProductoDetail productos={productos} />
-  //     <ItemCount style={{ marginLeft: 'auto' }} />
-  //   </div>
-  // );
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <ItemDetail productos={producto} />
+      {/* <ItemCount style={{ marginLeft: 'auto' }} /> */}
+    </div>
+  );
 
 
 }

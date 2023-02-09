@@ -17,7 +17,7 @@ import { useParams } from "react-router-dom";
             .then(res=> {
                 
                setProducto(res.filter(producto => producto.categoria == idCategoria));
-               parseInt(idCategoria);
+               setLoading(false)
                //cada then debe hacer una sola cosa
             })
             .catch(err =>  console.log(err) )
