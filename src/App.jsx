@@ -20,8 +20,8 @@ function App() {
       <CartContextProvider>
         <NavBar/>
           <Routes>
-            <Route path='/' element={ <ItemListContainer saludo='soy item list container'/>}/>
-            <Route path='/categoria/:idCategoria' element={ <ItemListContainer saludo='soy item list container'/>}/>
+            <Route path='/' element={ <ItemListContainer />}/>
+            <Route path='/categoria/:idCategoria' element={ <ItemListContainer />}/>
             { /* los dos puntos son para indicar parametro */}
             <Route path='/detalle/:idProducto' element={ <ItemDetailContainer/> }/>
             <Route path='/cart' element={ <CartContainer/> }/>  
@@ -29,7 +29,7 @@ function App() {
             <Route path='*' element={ <Navigate to='/' /> }/> 
             {/* cuando pongo * significa cuando no esta en path, me redirecciona al to dentro del navigate*/}
           </Routes>
-        <ItemCount/>
+          {/* <ItemCount/> */}
       </CartContextProvider>
     </BrowserRouter>
   )

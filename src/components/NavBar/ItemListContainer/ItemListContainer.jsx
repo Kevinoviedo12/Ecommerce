@@ -53,7 +53,7 @@ import { useParams } from "react-router-dom";
                         flexWrap: 'wrap',
                     }}>
                         {
-                            productos.map(producto => 
+                            productos.map((producto) => 
                             <ItemCardContainer key={producto.id} producto = {producto}/>
                         )}
                     
