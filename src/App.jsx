@@ -16,9 +16,10 @@ function App() {
   
 //estados
   return (
+    <CartContextProvider>
     <BrowserRouter>
-      <CartContextProvider>
         <NavBar/>
+        
           <Routes>
             <Route path='/' element={ <ItemListContainer />}/>
             <Route path='/categoria/:idCategoria' element={ <ItemListContainer />}/>
@@ -30,8 +31,8 @@ function App() {
             {/* cuando pongo * significa cuando no esta en path, me redirecciona al to dentro del navigate*/}
           </Routes>
           {/* <ItemCount/> */}
-      </CartContextProvider>
     </BrowserRouter>
+    </CartContextProvider>
   )
 }
 

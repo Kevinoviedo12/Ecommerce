@@ -32,8 +32,6 @@ const ItemDetail = ({ productos }) => {
               </Link>
             </div>
           </div>
-        ))
-        
       </div>
       
     </div>

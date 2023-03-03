@@ -9,8 +9,8 @@ let productos = [
     //natacion
     {id: '5',  categoria:"natacion", name: "Gorro de natacion", price:1990,foto:'/public/gorro-natacion.PNG'},
     {id: '6',  categoria:"natacion", name: "Antiparras", price:3000,foto:'/public/antiparras.JPG'},
-    {id: '5',  categoria:"natacion", name: "Malla de natacion", price:3400,foto:'/public/malla.JFIF'},
-    {id: '6',  categoria:"natacion", name: "Ojotas negras de cuero", price:7100,foto:'/public/ojotas.JPG'},
+    {id: '7',  categoria:"natacion", name: "Malla de natacion", price:3400,foto:'/public/malla.JFIF'},
+    {id: '8',  categoria:"natacion", name: "Ojotas negras de cuero", price:7100,foto:'/public/ojotas.JPG'},
     //tenis
     {id: '9',  categoria:"tenis", name: "Raqueta dunlop", price:50000,foto:'/public/raqueta.jpg'},
     {id: '10',  categoria:"tenis", name: "Muñequera nike", price:5400,foto:'/public/muñequera.jpg'},
